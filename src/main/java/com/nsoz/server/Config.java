@@ -178,9 +178,11 @@ public class Config {
 
     public String getMongodbUrl() {
         if (!StringUtils.isNullOrEmpty(mongodbUser) && !StringUtils.isNullOrEmpty(mongodbPassword)) {
-            return String.format("mongodb://%s:%s@%s:%d/%s", mongodbUser, mongodbPassword, mongodbHost, mongodbPort, mongodbName);
+//            return String.format("mongodb://%s:%s@%s:%d/%s", mongodbUser, mongodbPassword, mongodbHost, mongodbPort, mongodbName);
+            return String.format("mongodb://transytrong20:OuH6p5G0MZ2p6pzFTBHqoK6Q2WeXFvE9qxkBhTSdRz5ZIAk0qL7CfthL0ZRUVWoKaJLKc4tLUL9QACDbeXnRPQ==@transytrong20.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@transytrong20@");
         }
-        return String.format("mongodb://%s:%d", mongodbHost, mongodbPort);
+//        return String.format("mongodb://%s:%d", mongodbHost, mongodbPort);
+            return String.format("mongodb://transytrong20:OuH6p5G0MZ2p6pzFTBHqoK6Q2WeXFvE9qxkBhTSdRz5ZIAk0qL7CfthL0ZRUVWoKaJLKc4tLUL9QACDbeXnRPQ==@transytrong20.mongo.cosmos.azure.com:10255/?ssl=true&retrywrites=false&replicaSet=globaldb&maxIdleTimeMS=120000&appName=@transytrong20@");
     }
 
 }
